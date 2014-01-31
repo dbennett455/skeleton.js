@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RequireJS Skeleton test</title>
+
+    <script data-main="js/require-skeleton" src="js/lib/require.js"></script>
+
+  </head>
+
+  <body>
+
+    <script>
+
+      require(['require-skeleton'],function(){
+
+          var skel1=new Skeleton().setName("one");
+          var skel2=new Skeleton().setName("two");
+
+          jQuery('#skel1_getName').html(skel1.getName());
+          jQuery('#skel2_getName').html(skel2.getName());
+
+      });
+
+    </script>
+
+    <p>skel1.getName()=<span id="skel1_getName"></span></p>
+    <p>skel2.getName()=<span id="skel2_getName"></span></p>
+
+  </body>
+</html>

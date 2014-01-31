@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>direct loaded Skeleton test</title>
+
+    <script type="text/javascript" src="js/skeleton.js"></script>
+
+  </head>
+
+  <body>
+
+    <p>skel1.getName()=<span id="skel1_getName"></span></p>
+    <p>skel2.getName()=<span id="skel2_getName"></span></p>
+
+    <script>
+
+	    var skel1=new Skeleton().setName("one");
+	    var skel2=new Skeleton().setName("two");
+
+	    document.getElementById("skel1_getName").innerHTML=skel1.getName();
+	    document.getElementById("skel2_getName").innerHTML=skel2.getName();
+
+    </script>
+
+  </body>
+</html>
